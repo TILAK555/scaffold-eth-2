@@ -1,3 +1,5 @@
+import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
+
 const deployedContracts = {
   11155111: {
     Sepolia: {
@@ -65,6 +67,7 @@ const deployedContracts = {
       },
     },
   },
-} as const;
+} as const satisfies GenericContractsDeclaration; // <--- THIS PART IS CRITICAL
 
 export default deployedContracts;
+
