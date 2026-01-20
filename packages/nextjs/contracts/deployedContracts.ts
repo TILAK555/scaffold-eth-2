@@ -18,9 +18,7 @@ const deployedContracts = {
               "type": "function"
             },
             {
-              "inputs": [
-                { "internalType": "uint256", "name": "_amountAIn", "type": "uint256" }
-              ],
+              "inputs": [{ "internalType": "uint256", "name": "_amountAIn", "type": "uint256" }],
               "name": "swapAforB",
               "outputs": [{ "internalType": "uint256", "name": "amountBOut", "type": "uint256" }],
               "stateMutability": "nonpayable",
@@ -67,7 +65,7 @@ const deployedContracts = {
       },
     },
   },
-} as const satisfies GenericContractsDeclaration; // <--- THIS PART IS CRITICAL
+} as const satisfies GenericContractsDeclaration;
 
 export default deployedContracts;
 
